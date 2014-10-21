@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="white" type="color">#fff</item>
+    <item name="teal_50" type="color">#e0f2f1</item>
+    <item name="teal_100" type="color">#b2dfdb</item>
+    <item name="teal_200" type="color">#80cbc4</item>
+    <item name="teal_300" type="color">#4db6ac</item>
+    <item name="teal_400" type="color">#26a69a</item>
+    <item name="teal_500" type="color">#009688</item>
+    <item name="teal_600" type="color">#00897b</item>
+    <item name="teal_700" type="color">#00796b</item>
+    <item name="teal_800" type="color">#00695c</item>
+    <item name="teal_900" type="color">#004d40</item>
+    <item name="black" type="color">#000</item>
+</resources>

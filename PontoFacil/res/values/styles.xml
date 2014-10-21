@@ -1,0 +1,8 @@
+<resources>
+    
+    <!-- Application theme. -->
+    <style name="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

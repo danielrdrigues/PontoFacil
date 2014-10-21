@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+  	<!-- To Clock in -->  
+    <dimen name="to_clock_in_size">120dp</dimen>
+    <dimen name="to_clock_in_text_size">25pt</dimen>
+    
+</resources>
