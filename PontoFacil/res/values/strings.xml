@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">MeuPonto</string>
-
+    <string name="app_name">Meu Ponto</string>
+	
+    <string-array name="months_array">
+        <item>JAN</item>
+        <item>FEV</item>
+        <item>MAR</item>
+        <item>ABR</item>
+        <item>MAI</item>
+        <item>JUN</item>
+        <item>JUL</item>
+        <item>AGO</item>
+        <item>SET</item>
+        <item>OUT</item>
+        <item>NOV</item>
+        <item>DEZ</item>
+    </string-array>
+    
 </resources>

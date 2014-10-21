@@ -13,4 +13,12 @@
         android:textColor="@color/teal_500"
         android:textSize="@dimen/to_clock_in_text_size" />
 
+    <TextView
+        android:id="@+id/current_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_500"
+        android:textSize="@dimen/to_clock_in_text_size_subtitle"
+        android:textStyle="bold" />
+
 </LinearLayout>

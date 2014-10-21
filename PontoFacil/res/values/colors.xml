@@ -12,4 +12,5 @@
     <item name="teal_800" type="color">#00695c</item>
     <item name="teal_900" type="color">#004d40</item>
     <item name="black" type="color">#000</item>
+    <item name="alpha" type="color">#01000000</item>
 </resources>

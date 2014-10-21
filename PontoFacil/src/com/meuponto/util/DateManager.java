@@ -11,4 +11,9 @@ public class DateManager {
 		return day;
 	}
 
+	public static int getCurrentMonth() {
+		int month = currentDate.get(Calendar.MONTH);
+		return month;
+	}
+
 }

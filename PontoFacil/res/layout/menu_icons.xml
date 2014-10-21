@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/padding_border" >
+
+    <ImageView
+        android:id="@+id/open_menu"
+        android:layout_alignParentLeft="true"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:src="@drawable/menu_icon"
+        android:contentDescription="@null" />
+    
+    <ImageView
+        android:id="@+id/open_calendar"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:src="@drawable/calendar_icon"
+        android:contentDescription="@null" />
+
+</RelativeLayout>
