@@ -5,6 +5,8 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v4.widget.DrawerLayout.DrawerListener;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -12,7 +14,7 @@ import android.widget.RelativeLayout;
 
 import com.meuponto.ui.fragments.TimeCardFragment;
 
-public class MeuPontoActivity extends Activity implements OnClickListener {
+public class MeuPontoActivity extends Activity implements OnClickListener, DrawerListener {
 
 	private DrawerLayout drawerLayout;
 	private RelativeLayout slideMenu;
@@ -45,6 +47,7 @@ public class MeuPontoActivity extends Activity implements OnClickListener {
 	private void initValues() {
 		this.openMenu.setOnClickListener(this);
 		this.openCalendar.setOnClickListener(this);
+		this.drawerLayout.setDrawerListener(this);
 	}
 
 	private void displayView(int position) {
@@ -69,5 +72,29 @@ public class MeuPontoActivity extends Activity implements OnClickListener {
 			case R.id.open_calendar:
 				break;
 		}
+	}
+
+	@Override
+	public void onDrawerClosed(View drawerView) {
+		Log.i("MeuPonto", "Closed");
+	}
+
+	@Override
+	public void onDrawerOpened(View drawerView) {
+		Log.i("MeuPonto", "Opened");
+	}
+
+	@Override
+	public void onDrawerSlide(View drawerView, float slideOffset) {
+		float alpha = 1;
+		alpha = alpha - slideOffset;
+		Log.i("MeuPonto", "SlideOffset -> " + slideOffset);
+		this.openMenu.setAlpha(alpha);
+		this.openMenu.invalidate();
+	}
+
+	@Override
+	public void onDrawerStateChanged(int newState) {
+		//Log.i("MeuPonto", "newState -> " + newState);
 	}
 }
