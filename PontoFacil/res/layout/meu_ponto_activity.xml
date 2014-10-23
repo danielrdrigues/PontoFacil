@@ -19,7 +19,7 @@
     </LinearLayout>
 
     <include
-        android:id="@+id/slide_menu"
+        android:id="@+id/slide_menu_layout"
         layout="@layout/slide_menu" />
 
 </android.support.v4.widget.DrawerLayout>

@@ -1,25 +1,37 @@
 package com.meuponto.ui.activity;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.DrawerLayout.DrawerListener;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
+import com.meuponto.adapter.SlideMenuAdapter;
+import com.meuponto.model.SlideMenuItem;
 import com.meuponto.ui.fragments.TimeCardFragment;
+import com.meuponto.util.Constants.RobotoFontType;
+import com.meuponto.util.FontManager;
 
 public class MeuPontoActivity extends Activity implements OnClickListener, DrawerListener {
 
 	private DrawerLayout drawerLayout;
-	private RelativeLayout slideMenu;
 	private ImageView openMenu;
 	private ImageView openCalendar;
+	private ImageView closeMenu;
+	private RelativeLayout slideMenuLayout;
+	private ListView slideMenu;
+	private String[] slideMenuTitles;
+	private ArrayList<SlideMenuItem> slideMenuItens;
+	private SlideMenuAdapter slideMenuAdapter;
 
 	private FragmentManager fragmentManager = getFragmentManager();
 
@@ -37,9 +49,11 @@ public class MeuPontoActivity extends Activity implements OnClickListener, Drawe
 
 	private void initViews() {
 		this.drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-		this.slideMenu = (RelativeLayout) findViewById(R.id.slide_menu);
 		this.openMenu = (ImageView) findViewById(R.id.open_menu);
 		this.openCalendar = (ImageView) findViewById(R.id.open_calendar);
+		this.closeMenu = (ImageView) findViewById(R.id.close_menu);
+		this.slideMenuLayout = (RelativeLayout) findViewById(R.id.slide_menu_layout);
+		this.slideMenu = (ListView) findViewById(R.id.slide_menu);
 
 		this.initValues();
 	}
@@ -48,6 +62,19 @@ public class MeuPontoActivity extends Activity implements OnClickListener, Drawe
 		this.openMenu.setOnClickListener(this);
 		this.openCalendar.setOnClickListener(this);
 		this.drawerLayout.setDrawerListener(this);
+		this.closeMenu.setOnClickListener(this);
+
+		((TextView) findViewById(R.id.app_name)).setTypeface(FontManager.getRobotoFont(RobotoFontType.ROBOTO_LIGHT, getAssets()));
+
+		this.slideMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
+		this.slideMenuItens = new ArrayList<SlideMenuItem>();
+
+		for (int i = 0; i < this.slideMenuTitles.length; i++) {
+			this.slideMenuItens.add(new SlideMenuItem(slideMenuTitles[i]));
+		}
+
+		this.slideMenuAdapter = new SlideMenuAdapter(getApplicationContext(), slideMenuItens);
+		this.slideMenu.setAdapter(slideMenuAdapter);
 	}
 
 	private void displayView(int position) {
@@ -67,34 +94,33 @@ public class MeuPontoActivity extends Activity implements OnClickListener, Drawe
 	public void onClick(View v) {
 		switch (v.getId()) {
 			case R.id.open_menu:
-				this.drawerLayout.openDrawer(this.slideMenu);
+				this.drawerLayout.openDrawer(this.slideMenuLayout);
 				break;
 			case R.id.open_calendar:
+				break;
+			case R.id.close_menu:
+				this.drawerLayout.closeDrawer(this.slideMenuLayout);
 				break;
 		}
 	}
 
 	@Override
 	public void onDrawerClosed(View drawerView) {
-		Log.i("MeuPonto", "Closed");
 	}
 
 	@Override
 	public void onDrawerOpened(View drawerView) {
-		Log.i("MeuPonto", "Opened");
 	}
 
 	@Override
 	public void onDrawerSlide(View drawerView, float slideOffset) {
 		float alpha = 1;
 		alpha = alpha - slideOffset;
-		Log.i("MeuPonto", "SlideOffset -> " + slideOffset);
 		this.openMenu.setAlpha(alpha);
 		this.openMenu.invalidate();
 	}
 
 	@Override
 	public void onDrawerStateChanged(int newState) {
-		//Log.i("MeuPonto", "newState -> " + newState);
 	}
 }
