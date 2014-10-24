@@ -1,4 +1,4 @@
-package com.meuponto.model;
+package com.meuponto.ui.adapter;
 
 public class SlideMenuItem {
 

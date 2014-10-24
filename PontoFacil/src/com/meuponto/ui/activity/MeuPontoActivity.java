@@ -15,8 +15,8 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.meuponto.adapter.SlideMenuAdapter;
-import com.meuponto.model.SlideMenuItem;
+import com.meuponto.ui.adapter.SlideMenuAdapter;
+import com.meuponto.ui.adapter.SlideMenuItem;
 import com.meuponto.ui.fragments.TimeCardFragment;
 import com.meuponto.util.Constants.RobotoFontType;
 import com.meuponto.util.FontManager;
@@ -45,6 +45,7 @@ public class MeuPontoActivity extends Activity implements OnClickListener, Drawe
 		if (savedInstanceState == null) {
 			displayView(0);
 		}
+		
 	}
 
 	private void initViews() {
