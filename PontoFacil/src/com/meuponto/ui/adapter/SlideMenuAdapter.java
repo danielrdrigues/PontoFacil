@@ -1,4 +1,4 @@
-package com.meuponto.adapter;
+package com.meuponto.ui.adapter;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.meuponto.model.SlideMenuItem;
 import com.meuponto.ui.activity.R;
 import com.meuponto.util.Constants.RobotoFontType;
 import com.meuponto.util.FontManager;
