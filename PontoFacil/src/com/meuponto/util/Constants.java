@@ -1,7 +1,15 @@
 package com.meuponto.util;
 
 public class Constants {
-
+	
+	public static enum FragmentScreen {
+		HOME,
+		CONFIG,
+		MONTHS,
+		HELP,
+		ABOUT
+	}
+	
 	public static enum RobotoFontType {
 		ROBOTO_BLACK("fonts/Roboto-Black.ttf"), 
 		ROBOTO_BLACK_ITALIC("fonts/Roboto-BlackItalic.ttf"), 

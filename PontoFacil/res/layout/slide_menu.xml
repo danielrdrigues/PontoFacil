@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     android:layout_gravity="start"
     android:background="@color/alpha_teal"
-    android:paddingTop="@dimen/padding_border" >
+    android:paddingTop="@dimen/padding_border"
+    android:layout_marginLeft="-64dp" >
 
     <ImageView
         android:id="@+id/close_menu"
