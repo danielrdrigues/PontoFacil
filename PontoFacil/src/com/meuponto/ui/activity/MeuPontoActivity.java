@@ -2,14 +2,14 @@ package com.meuponto.ui.activity;
 
 import java.util.ArrayList;
 
-import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentManager;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.DrawerLayout.DrawerListener;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -17,23 +17,25 @@ import android.widget.TextView;
 
 import com.meuponto.adapter.SlideMenuAdapter;
 import com.meuponto.model.SlideMenuItem;
-import com.meuponto.ui.fragments.TimeCardFragment;
+import com.meuponto.util.Constants.FragmentScreen;
 import com.meuponto.util.Constants.RobotoFontType;
 import com.meuponto.util.FontManager;
+import com.meuponto.util.FragmentController;
 
-public class MeuPontoActivity extends Activity implements OnClickListener, DrawerListener {
+public class MeuPontoActivity extends FragmentActivity implements OnClickListener, DrawerListener {
 
 	private DrawerLayout drawerLayout;
+
 	private ImageView openMenu;
 	private ImageView openCalendar;
 	private ImageView closeMenu;
+
 	private RelativeLayout slideMenuLayout;
 	private ListView slideMenu;
-	private String[] slideMenuTitles;
-	private ArrayList<SlideMenuItem> slideMenuItens;
 	private SlideMenuAdapter slideMenuAdapter;
 
-	private FragmentManager fragmentManager = getFragmentManager();
+	private String[] slideMenuTitles;
+	private ArrayList<SlideMenuItem> slideMenuItens;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +45,7 @@ public class MeuPontoActivity extends Activity implements OnClickListener, Drawe
 		this.initViews();
 
 		if (savedInstanceState == null) {
-			displayView(0);
+			displayView(0, false, false);
 		}
 	}
 
@@ -75,19 +77,40 @@ public class MeuPontoActivity extends Activity implements OnClickListener, Drawe
 
 		this.slideMenuAdapter = new SlideMenuAdapter(getApplicationContext(), slideMenuItens);
 		this.slideMenu.setAdapter(slideMenuAdapter);
+		this.slideMenu.setOnItemClickListener(new OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				displayView(position, true, false);
+			}
+		});
 	}
 
-	private void displayView(int position) {
-		Fragment fragment = null;
+	private void displayView(int position, boolean animated, boolean back) {
+
+		FragmentScreen fragmentScreen = null;
+
 		switch (position) {
 			case 0:
-				fragment = new TimeCardFragment();
+				fragmentScreen = FragmentScreen.HOME;
+				break;
+			case 1:
+				fragmentScreen = FragmentScreen.HOME;
+				break;
+			case 2:
+				fragmentScreen = FragmentScreen.HOME;
+				break;
+			case 3:
+				fragmentScreen = FragmentScreen.HOME;
+				break;
+			case 4:
+				fragmentScreen = FragmentScreen.HOME;
 				break;
 		}
 
-		if (fragment != null) {
-			fragmentManager.beginTransaction().replace(R.id.frame_container, fragment).commit();
-		}
+		FragmentController.chooseScreen(getSupportFragmentManager(), fragmentScreen, R.id.frame_container, animated, back);
+		this.slideMenu.setItemChecked(position, true);
+		this.slideMenu.setSelection(position);
+		this.drawerLayout.closeDrawer(this.slideMenuLayout);
 	}
 
 	@Override
