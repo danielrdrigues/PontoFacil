@@ -20,10 +20,10 @@
     
     <string-array name="nav_drawer_items">
         <item >Home</item>
-        <item >Config</item>
-        <item >Months</item>
-        <item >Help</item>
-        <item >About</item>
+        <item >Configurações</item>
+        <item >Meses</item>
+        <item >Ajuda</item>
+        <item >Sobre</item>
     </string-array>
     
 </resources>

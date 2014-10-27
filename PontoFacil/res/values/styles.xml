@@ -5,4 +5,19 @@
         <item name="android:windowNoTitle">true</item>
     </style>
 
+    <style name="MeuPontoEditText">
+        <item name="android:layout_width">@dimen/edit_size_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:background">@drawable/meuponto_edittext</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">numberSigned</item>
+        <item name="android:hint">"00:00"</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20pt</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
 </resources>

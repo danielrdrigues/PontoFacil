@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 
 import com.meuponto.ui.fragments.TimeCardFragment;
+import com.meuponto.ui.fragments.ToClockInFragment;
 import com.meuponto.util.Constants.FragmentScreen;
 
 public class FragmentController {
@@ -32,6 +33,9 @@ public class FragmentController {
 				break;
 			case MONTHS:
 
+				break;
+			case TO_CLOCK_IN:
+				fragment = new ToClockInFragment();
 				break;
 		}
 

@@ -5,6 +5,8 @@
     android:background="@color/white"
     android:gravity="center" >
 
-    <include layout="@layout/to_clock_in_button" />
+    <include
+        android:id="@+id/to_clock_in"
+        layout="@layout/to_clock_in_button" />
 
 </RelativeLayout>

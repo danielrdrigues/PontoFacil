@@ -7,7 +7,8 @@ public class Constants {
 		CONFIG,
 		MONTHS,
 		HELP,
-		ABOUT
+		ABOUT,
+		TO_CLOCK_IN
 	}
 	
 	public static enum RobotoFontType {
