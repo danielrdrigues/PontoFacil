@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res"><file name="briefcase_icon" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/drawable/briefcase_icon.png" qualifiers="" type="drawable"/><file name="calendar_icon" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/drawable/calendar_icon.png" qualifiers="" type="drawable"/><file name="circle_background" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/drawable/circle_background.xml" qualifiers="" type="drawable"/><file name="icon_close" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/drawable/icon_close.png" qualifiers="" type="drawable"/><file name="item_bg_slide_normal" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/drawable/item_bg_slide_normal.xml" qualifiers="" type="drawable"/><file name="item_bg_slide_selected" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/drawable/item_bg_slide_selected.xml" qualifiers="" type="drawable"/><file name="menu_icon" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/drawable/menu_icon.png" qualifiers="" type="drawable"/><file name="meuponto_edittext" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/drawable/meuponto_edittext.xml" qualifiers="" type="drawable"/><file name="slide_menu_selector" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/drawable/slide_menu_selector.xml" qualifiers="" type="drawable"/><file name="ic_launcher" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/drawable-hdpi/ic_launcher.png" qualifiers="hdpi" type="drawable"/><file name="ic_launcher" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/drawable-mdpi/ic_launcher.png" qualifiers="mdpi" type="drawable"/><file name="ic_launcher" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/drawable-xhdpi/ic_launcher.png" qualifiers="xhdpi" type="drawable"/><file name="ic_launcher" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/drawable-xxhdpi/ic_launcher.png" qualifiers="xxhdpi" type="drawable"/><file name="config_fragment" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/layout/config_fragment.xml" qualifiers="" type="layout"/><file name="menu_icons" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/layout/menu_icons.xml" qualifiers="" type="layout"/><file name="meu_ponto_activity" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/layout/meu_ponto_activity.xml" qualifiers="" type="layout"/><file name="slide_menu" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/layout/slide_menu.xml" qualifiers="" type="layout"/><file name="slide_menu_list_item" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/layout/slide_menu_list_item.xml" qualifiers="" type="layout"/><file name="time_card_fragment" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/layout/time_card_fragment.xml" qualifiers="" type="layout"/><file name="to_clock_in_button" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/layout/to_clock_in_button.xml" qualifiers="" type="layout"/><file name="to_clock_in_fragment" path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/layout/to_clock_in_fragment.xml" qualifiers="" type="layout"/><file path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/values/colors.xml" qualifiers=""><item name="teal_900" type="color">#004d40</item><item name="teal_800" type="color">#00695c</item><item name="teal_300" type="color">#4db6ac</item><item name="gray" type="color">#d3d3d3</item><item name="teal_500" type="color">#009688</item><item name="teal_700" type="color">#00796b</item><item name="teal_50" type="color">#e0f2f1</item><item name="teal_600" type="color">#00897b</item><item name="alpha_teal" type="color">#20009688</item><item name="alpha_gray" type="color">#20d3d3d3</item><item name="teal_200" type="color">#80cbc4</item><item name="white" type="color">#fff</item><item name="black" type="color">#000</item><item name="teal_100" type="color">#b2dfdb</item><item name="teal_400" type="color">#26a69a</item><item name="alpha" type="color">#01000000</item></file><file path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/values/dimens.xml" qualifiers=""><dimen name="to_clock_in_text_size_subtitle">10pt</dimen><dimen name="edit_size_width">200dp</dimen><dimen name="edit_size_height">40dp</dimen><dimen name="to_clock_in_text_size">25pt</dimen><dimen name="to_clock_in_size">120dp</dimen><dimen name="image_size">30dp</dimen><dimen name="padding_border">16dp</dimen></file><file path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/values/strings.xml" qualifiers=""><string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Configurações</item>
+        <item>Meses</item>
+        <item>Ajuda</item>
+        <item>Sobre</item>
+    </string-array><string-array name="months_array">
+        <item>JAN</item>
+        <item>FEV</item>
+        <item>MAR</item>
+        <item>ABR</item>
+        <item>MAI</item>
+        <item>JUN</item>
+        <item>JUL</item>
+        <item>AGO</item>
+        <item>SET</item>
+        <item>OUT</item>
+        <item>NOV</item>
+        <item>DEZ</item>
+    </string-array><string name="app_name">Meu Ponto</string></file><file path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/values/styles.xml" qualifiers=""><style name="MeuPontoEditText">
+        <item name="android:layout_width">@dimen/edit_size_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:background">@drawable/meuponto_edittext</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">numberSigned</item>
+        <item name="android:hint">"00:00"</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20pt</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style><style name="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style></file></source><source path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/build/generated/res/rs/debug"/><source path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/build/generated/res/generated/debug"/></dataSet><dataSet config="debug"><source path="/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/debug/res"/></dataSet><mergedItems/></merger>

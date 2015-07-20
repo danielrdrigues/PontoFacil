@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/alpha_teal"
+    android:paddingTop="@dimen/padding_border"
+    android:layout_marginLeft="-64dp" >
+
+    <ImageView
+        android:id="@+id/close_menu"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:layout_marginBottom="@dimen/padding_border"
+        android:layout_marginLeft="@dimen/padding_border"
+        android:contentDescription="@null"
+        android:src="@drawable/icon_close" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/close_menu"
+        android:layout_marginBottom="@dimen/padding_border"
+        android:layout_marginLeft="@dimen/padding_border"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="15pt" />
+
+    <ListView
+        android:id="@+id/slide_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_name"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:listSelector="@drawable/slide_menu_selector" />
+
+</RelativeLayout><!-- From: file:/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/layout/slide_menu.xml -->
