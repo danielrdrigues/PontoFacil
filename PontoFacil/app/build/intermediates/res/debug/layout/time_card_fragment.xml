@@ -9,4 +9,4 @@
         android:id="@+id/to_clock_in"
         layout="@layout/to_clock_in_button" />
 
-</RelativeLayout><!-- From: file:/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/layout/time_card_fragment.xml -->
+</RelativeLayout><!-- From: file:/Users/uiltonsantos/Documents/Repositorio/PontoFacil/PontoFacil/app/src/main/res/layout/time_card_fragment.xml -->

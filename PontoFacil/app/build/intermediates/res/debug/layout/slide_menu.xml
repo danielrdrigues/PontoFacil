@@ -37,4 +37,4 @@
         android:divider="@null"
         android:listSelector="@drawable/slide_menu_selector" />
 
-</RelativeLayout><!-- From: file:/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/layout/slide_menu.xml -->
+</RelativeLayout><!-- From: file:/Users/uiltonsantos/Documents/Repositorio/PontoFacil/PontoFacil/app/src/main/res/layout/slide_menu.xml -->

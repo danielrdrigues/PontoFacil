@@ -43,7 +43,7 @@ public class TimeCardDAO {
 	public void clearAll() {
 		open();
 		try {
-			db.delete(TABLE_TIME_CARD, " ", null);
+			db.delete(TABLE_TIME_CARD, "", null);
 		} finally {
 			close();
 		}

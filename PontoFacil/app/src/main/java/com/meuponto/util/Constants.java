@@ -33,8 +33,6 @@ public class Constants {
 
 		private String fontTypeFace;
 
-		private boolean isTestFDP = true;
-
 		private RobotoFontType(String fontTypeFace) {
 			this.setFontTypeFace(fontTypeFace);
 		}

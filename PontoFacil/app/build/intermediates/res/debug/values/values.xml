@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/Users/uiltonsantos/Documents/Repositorio/PontoFacil/PontoFacil/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="months_array">
         <item>JAN</item>
@@ -23,7 +23,7 @@
         <item>Ajuda</item>
         <item>Sobre</item>
     </string-array>
-    <!-- From: file:/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/uiltonsantos/Documents/Repositorio/PontoFacil/PontoFacil/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <item name="alpha" type="color">#01000000</item>
     <item name="alpha_gray" type="color">#20d3d3d3</item>
@@ -41,7 +41,7 @@
     <item name="teal_800" type="color">#00695c</item>
     <item name="teal_900" type="color">#004d40</item>
     <item name="white" type="color">#fff</item>
-    <!-- From: file:/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/uiltonsantos/Documents/Repositorio/PontoFacil/PontoFacil/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="edit_size_height">40dp</dimen>
     <dimen name="edit_size_width">200dp</dimen>
@@ -50,10 +50,10 @@
     <dimen name="to_clock_in_size">120dp</dimen>
     <dimen name="to_clock_in_text_size">25pt</dimen>
     <dimen name="to_clock_in_text_size_subtitle">10pt</dimen>
-    <!-- From: file:/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/Users/uiltonsantos/Documents/Repositorio/PontoFacil/PontoFacil/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">Meu Ponto</string>
-    <!-- From: file:/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/uiltonsantos/Documents/Repositorio/PontoFacil/PontoFacil/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme">
         <item name="android:windowNoTitle">true</item>

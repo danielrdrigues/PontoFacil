@@ -21,4 +21,4 @@
         android:textSize="@dimen/to_clock_in_text_size_subtitle"
         android:textStyle="bold" />
 
-</LinearLayout><!-- From: file:/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/layout/to_clock_in_button.xml -->
+</LinearLayout><!-- From: file:/Users/uiltonsantos/Documents/Repositorio/PontoFacil/PontoFacil/app/src/main/res/layout/to_clock_in_button.xml -->

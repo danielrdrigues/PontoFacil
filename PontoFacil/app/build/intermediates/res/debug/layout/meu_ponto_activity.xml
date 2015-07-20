@@ -22,4 +22,4 @@
         android:id="@+id/slide_menu_layout"
         layout="@layout/slide_menu" />
 
-</android.support.v4.widget.DrawerLayout><!-- From: file:/Users/uiltonsantos/AndroidStudioProjects/PontoFacil/app/src/main/res/layout/meu_ponto_activity.xml -->
+</android.support.v4.widget.DrawerLayout><!-- From: file:/Users/uiltonsantos/Documents/Repositorio/PontoFacil/PontoFacil/app/src/main/res/layout/meu_ponto_activity.xml -->
